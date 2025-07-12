@@ -5,6 +5,7 @@ import com.beratkirdar.weather_app.dto.WeatherResponseDTO;
 import com.beratkirdar.weather_app.service.WeatherService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -20,6 +21,7 @@ public class WeatherServiceImpl implements WeatherService {
     @Value("${weather.api.key}")
     private String weatherApiKey;
 
+    @Cacheable(value = "weather", key = "#city.toLowerCase()")
     public WeatherResponseDTO getWeather(String city){
 
         String url = String.format("%s?q=%s&appid=%s&units=metric", weatherApiUrl, city, weatherApiKey);
