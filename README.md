@@ -64,7 +64,7 @@ App will start at:
 
 ## 📡 API Usage
 
-### `GET /api/weather?city=London`
+### `GET /api/weather/London`
 
 Fetches current weather data for a given city. If the data has been requested within the last 12 hours, it is served from Redis cache.
 
@@ -74,9 +74,8 @@ Fetches current weather data for a given city. If the data has been requested wi
 {
   "city": "London",
   "temperature": 21.7,
-  "description": "few clouds",
   "humidity": 65,
-  "windSpeed": 3.6
+  "description": "few clouds"
 }
 ```
 
