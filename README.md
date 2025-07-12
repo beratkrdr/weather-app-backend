@@ -1,6 +1,6 @@
-# 🌦️ Weather API Wrapper Service
+# 🌦️ Weather App
 
-Weather API Wrapper Service is a lightweight RESTful Spring Boot application that fetches real-time weather data from the **OpenWeatherMap API** and caches responses using **Redis** to improve performance.
+Weather App is a lightweight RESTful Spring Boot application that fetches real-time weather data from the **OpenWeatherMap API** and caches responses using **Redis** to improve performance.
 
 ## ✨ Features
 
@@ -30,8 +30,8 @@ Weather API Wrapper Service is a lightweight RESTful Spring Boot application tha
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/beratkrdr/weather-app.git
-cd weather-app
+git clone https://github.com/beratkrdr/weather-app-backend.git
+cd weather-app-backend
 ```
 
 ### 2. Add your configuration
